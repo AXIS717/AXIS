@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.news {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background: #d61900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticker {
+    white-space: nowrap;
+}
+
+.ticker span {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 50s linear infinite;
+}
+
+@keyframes scroll-left{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.line {
+    margin: 5px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+}
+
+.mpr {
+    margin: 2px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.merch {
+    background: linear-gradient(230deg, #d5d4d4, #919090, #a9aaa9, #515150, #3c3c3a);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.itembox {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    gap: 10px;
+}
+
+.item {
+    width: 180px;
+    height: auto;
+    margin: 10px;
+    background: linear-gradient(230deg, #364649, #708f96);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productname {
+    margin: 5px;
+    font-size: 26px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.productprice {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.image img{
+    background-color: #27958f;
+    border-radius: 15px;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addbtn {
+    width: 160px;
+    height: 30px;
+    background-color: #4a6268;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.addbtn:hover {
+    width: 170px;
+    height: 40px;
+    background-color: #e6e2e1;
+    color: #0e1116;
+    cursor: pointer;
+}
+
+@media (max-width: 460px) {
+
+    .line {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .mpr {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .item {
+        width: 40%;
+
+    }
+
+    .image img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .itemname {
+        font-size: 18px;
+
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .select {
+        width: 100px;
+    }
+
+    .addbtn {
+        width: 130px;
+    }
+
+    .addbtn:hover {
+        width: 135px
+    }
+
+}

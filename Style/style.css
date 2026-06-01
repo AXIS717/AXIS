@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.explore:hover,
+.view:hover,
+.start:hover {
+    background-color: #c5bac4;
+    height: 55px;
+    width: 215px;
+}
+
+.line {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 6px;
+    color: #1e2025;
+}
+
+.para {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px;
+    color: #1e2025;
+}
+
+.list {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px;
+    color: #1e2025;
+}
+
+.under {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 6px;
+    color: #1e2025;
+}
+
+.bitch {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 6px;
+    color: #000;
+}
+
+.mpr {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px;
+    color: #000;
+}
+
+.intro {
+    background: linear-gradient(230deg, #d5d4d4, #919090, #a9aaa9, #515150, #3c3c3a);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.what {
+    background: linear-gradient(245deg, #191d23, #57707a, #7e919f, #979dab, #c5bac4, #dedcdc);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.why {
+    background: linear-gradient(245deg, #191d23, #57707a, #7e919f, #979dab, #c5bac4, #dedcdc);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.axis-brand {
+    background: linear-gradient(245deg, #191d23, #57707a, #7e919f, #979dab, #c5bac4, #dedcdc);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.acc {
+    background: linear-gradient(245deg, #191d23, #57707a, #7e919f, #979dab, #c5bac4, #dedcdc);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.late {
+    background: linear-gradient(245deg, #191d23, #57707a, #7e919f, #979dab, #c5bac4, #dedcdc);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.action {
+    background: linear-gradient(245deg, #191d23, #57707a, #7e919f, #979dab, #c5bac4, #dedcdc);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
+    height: 40px;
+    width: 200px;
+    font-size: 22px;
+    background-color: rgba(94, 109, 109, 0.534);
+}
+
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
+    height: 40px;
+    width: 200px;
+    font-size: 22px;
+    background-color: rgba(94, 109, 109, 0.534);
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
+    height: 40px;
+    width: 200px;
+    font-size: 22px;
+    background-color: rgba(94, 109, 109, 0.534);
+}
+
+@media (max-width: 460px) {
+
+    .line {
+        font-size: 20px;
+        margin: 3px;
+        font-weight: 600;
+    }
+
+    .para {
+        font-size: 12px;
+        margin: 3px;
+        font-weight: 300;
+    }
+
+    .list {
+        font-size: 12px;
+        margin: 3px;
+        font-weight: 300;
+    }
+
+    .bitch {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 3px;
+    }
+
+    .mpr {
+        font-size: 12px;
+        font-weight: 300;
+        margin: 3px;
+    }
+
+    .under {
+        font-size: 15px;
+        margin: 3px;
+    }
+
+    .intro {
+        margin: 10px;
+    }
+
+    .what {
+        margin: 10px;
+    }
+
+    .why {
+        margin: 10px;
+    }
+
+    .axis-brand {
+        margin: 10px;
+    }
+
+    .acc {
+        margin: 10px;
+    }
+
+    .late {
+        margin: 10px;
+    }
+
+    .action {
+        margin: 10px;
+    }
+
+    .explore {
+        height: 20px;
+        width: 115px;
+        margin: 5px;
+        font-size: 11px;
+    }
+
+    .view {
+        height: 20px;
+        width: 100px;
+        margin: 5px;
+        font-size: 11px;
+    }
+
+    .start {
+        height: 20px;
+        width: 100px;
+        margin: 5px;
+        font-size: 11px;
+    }
+
+    .explore:hover,
+    .view:hover,
+    .start:hover {
+        width: 115px;
+    }
+}

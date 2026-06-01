@@ -1,0 +1,429 @@
+body {
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: auto;
+    width: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.headerbox {
+    height: 180px;
+    background: linear-gradient(230deg, #ccd0cf, #9ba8ab, #4a5c6a, #253745, #11212d, #06141b);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.axis-logo img {
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-bar {
+    height: 60px;
+    width: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 20px;
+    gap: 10px;
+    background-color: rgba(32, 43, 43, 0.39);
+    border-radius: 20px;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.axisslogan {
+    height: 60px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.jobs {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(94, 109, 109, 0.849);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(94, 109, 109, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(94, 109, 109, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extras {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(94, 109, 109, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updates {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(94, 109, 109, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartamount {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(94, 109, 109, 0.801);
+    display: flex;
+    flex-direction: row;
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobs:hover, 
+.brand:hover, 
+.home:hover, 
+.extras:hover, 
+.updates:hover,
+.cartamount:hover {
+    background-color: #c5bac4;
+    height: 55px;
+    width: 135px;
+}
+
+.footerbox {
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #2c3e50, #bdc3c7, #2c3e50);
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.socials {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    gap: 10px;
+}
+
+.tiktok img {
+    width: auto;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.insta img {
+    width: auto;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.youtube img {
+    width: 60px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.contact {
+    width: 820px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background: rgba(250, 255, 255, 0.171);
+}
+
+.num {
+    color: #fff;
+    margin: 6px;
+}
+
+.dev {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.copy {
+    display: flex;
+    width: 900px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 15px;
+    background-color: #3e3636;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.version {
+    margin: 6px;
+    font-size: 20px;
+    color: #bdc3c7;
+}
+
+@media (max-width: 820px) {
+
+    .container {
+        width: 768px;
+        margin: none;
+    }
+
+    .axis-logo img {
+        width: auto;
+        height: 80px;
+    }
+
+    .nav-bar {
+        width: 566px;
+    }
+
+    .jobs {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .brand {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .home {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .extras {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .updates {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .copy {
+        width: 768px;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    .container {
+        width: 400px;
+        margin: 0px;
+    }
+
+    .headerbox {
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        height: 60px;
+    }
+
+    .axis-logo img {
+        width: auto;
+        height: 60px;
+        margin: 2.5px;
+        margin-top: 10px;
+    }
+
+    .nav-bar {
+        width: 320px;
+        gap: 5px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .axisslogan {
+        font-size: 18px;
+    }
+
+    .cartamount {
+        width: 80px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    .jobs {
+        width: 60px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+
+    .brand {
+        width: 60px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+
+    .home {
+        width: 60px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+
+    .extras {
+        width: 60px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+
+    .updates {
+        width: 60px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+    .jobs:hover,
+    .brand:hover,
+    .home:hover,
+    .extras:hover,
+    .updates:hover {
+        width: 75px;
+    }
+
+    .footerbox {
+        margin-top: 10px;
+    }
+
+    .logo img {
+        width: auto;
+        height: 60px;
+    }
+
+    .socials {
+        height: 30px;
+    }
+
+    .tiktok img {
+        width: auto;
+        height: 25px;
+    }
+
+    .insta img {
+        width: auto;
+        height: 25px;
+    }
+
+    .youtube img {
+        height: auto;
+        width: 35px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        font-size: 10px;
+        gap: 5px;
+        margin: 0;
+    }
+
+    .num {
+        font-size: 8px;
+    }
+
+    .dev {
+        font-size: 12px;
+    }
+
+    .copy {
+        width: 400px;
+        font-size: 12px;
+    }
+
+}
