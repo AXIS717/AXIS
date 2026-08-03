@@ -1,49 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.news {
-    width: 100%;
-    height: 50px;
-    overflow: hidden;
-    background: #d61900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ticker {
-    white-space: nowrap;
-}
-
-.ticker span {
-    font-size: 30px;
-    font-weight: 400;
-    color: #fff;
-    display: inline-block;
-    padding-left: 100%;
-    animation: scroll-left 50s linear infinite;
-}
-
-@keyframes scroll-left{
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
 .checkout {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;
+    gap: 20px
 }
 
 .info {
-    background: linear-gradient(130deg, #3a3a3a, #5f5f5f, #969696, #a5a5a5, #858585, #5f5f5f, #3a3a3a);
+    background: linear-gradient(45deg, #132f37, #2a4f58, #51727a);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,6 +92,9 @@
 }
 
 .n {
+    font-family: "Libertinus Math", system-ui;
+    font-weight: 400;
+    font-style: normal;
     width: 380px;
     border-bottom: 2px solid #fafaf7;
     display: flex;
@@ -235,7 +202,7 @@
 }
 
 .cartlist {
-    background: linear-gradient(30deg, #969696, #a5a5a5, #858585, #5f5f5f, #3a3a3a);
+    background: linear-gradient(45deg, #1a6d73 0, #3ed7c1 55%, #122f4c 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,58 +219,247 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 360px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    gap: 10px;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .cartRow {
     background-color: #fafaf7;
-    width: 340px;
+    width: 150px;
     height: auto;
-    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    flex-direction: column;
     border-radius: 20px;
+}
+
+.cartimage  {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 2px solid #000;
 }
 
 .cartimage img {
-    width: 70px;
-    height: 70px;
-    border-radius: 20px;
-    margin: 5px auto;
-    border: 2px solid #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
 }
 
 .productname {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 5px;
+    font-size: 20px;
+    font-family: "Cinzel" serif;
+    font-style: italic;
+    line-height: 20px;
+    padding: 0 10px;
+    
 }
 
 .productprice {
-    font-size: 14px;
-    font-weight: bold;
-    margin: 5px;
+    font-size: 20px;
+    font-family: "Cinzel" serif;
+    font-style: italic;
+    font-weight: 600;
+
 }
 
-.remove {
-    border: none;
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    border-radius: 20px;
+.productsize {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Marculles" serif;
+    padding: 0 10px;
+}
+
+.productcolor {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    font-family: "Marculles" serif;
+    padding: 0 10px;
+}
+
+
+.quantityBox {
+    width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #858585;
+    gap: 10px;
+    margin: 5px auto;
+    font-family: "Marculles" serif;
+    font-weight: 300;
+    font-size: 20px;
 }
 
-.remove:hover {
-    width: 60px;
-    height: 60px;
+.quantityBox button {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #2f3559, #b7a8bd);
     border: 2px solid #000;
-    fill: #fafaf7;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.quantityBox button:hover {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, #dcd5e5, #2f3559);
+    color: whitesmoke;
+}
+
+.quantityBox span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.price-details {
+    width: 360px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.method {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #000;
+    margin: 10px;
+    margin-right: 5px;
+    background: linear-gradient(45deg, #636d79, #7f8995);
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+}
+
+.deliveryOption {
+    width: 300px;
+    height: 40px;
+    background: linear-gradient(45deg, #9ea7b3, #636d79, #7f8995);
+    border: 2px solid #000;
+    margin: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
     cursor: pointer;
+    accent-color: #000;
+}
+
+.Prices {
+    height: 60px;
+    width: 300px;
+    margin: 10px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.ship {
+    background: linear-gradient(45deg, #464c55, #7f8995);
+    height: 40px;
+    width: 180px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+    color: whitesmoke;
+}
+
+.sub {
+    background: linear-gradient(45deg, #464c55, #7f8995);
+    height: 40px;
+    width: 180px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+    color: whitesmoke;
+}
+
+.shipping {
+    width: 120px;
+    height: 40px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #9ea7b3, #636d79);
+}
+
+.subtotal {
+    width: 120px;
+    height: 40px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #9ea7b3, #636d79);
+}
+
+.total {
+    width: 120px;
+    height: 40px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #9ea7b3, #636d79);
+    color: whitesmoke;
+}
+
+.fullprice {
+    background: linear-gradient(45deg, #464c55, #7f8995);
+    height: 40px;
+    border: 2px solid #000;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+    color: whitesmoke;
 }
 
 .btl {
@@ -314,26 +470,28 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    background-color: #fff;
+    background: linear-gradient(45deg, rgb(97, 136, 124), rgb(58, 124, 99));
     border-radius: 10px;
     gap: 10px;
+    color: whitesmoke;
 }
 
 .btl:hover {
     width: 210px;
     height: 60px;
     cursor: pointer;
-    background-color: #5f5f5f;
+    background: linear-gradient(45deg, #426359, #659b8c, #264437);
     color: whitesmoke;
     fill: whitesmoke;
 }
 
-.p {
+.posting {
     display: flex;  
     justify-content: center;
     align-items: center;
     font-size: 20px;
     font-weight: bold;
+    color: whitesmoke;
 }
 
 .d {
@@ -342,47 +500,7 @@
     align-items: center;
 }
 
-.ship {
-    background: linear-gradient(30deg, #a9f1df, #ffbbbb);
-    height: 50px;
-    width: 300px;
-    margin: 20px;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    font-size: 28px;
-    font-weight: bold;
-}
 
-.sub {
-    background: linear-gradient(30deg, #fca5f1, #b5ffff);
-    height: 50px;
-    width: 300px;
-    margin: 20px;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.fullprice {
-    background: linear-gradient(30deg, #38adae, #cd295a);
-    height: 50px;
-    width: 300px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    color: whitesmoke;
-}
 
 .Due {
     color: whitesmoke;
@@ -398,7 +516,6 @@
     align-items: center;
     height: auto;
     width: 340px;
-    border-bottom: 2px solid #fafaf7;
 }
 
 .listcart {
@@ -422,9 +539,11 @@
 }
 
 .very {
-    font-size: 35px;
-    font-weight: 700;
-    margin: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 3px;
+    color: whitesmoke;
+    font-family: "Sekuya", system-ui;
     width: 420px;
     height: 50px;
     border-radius: 20px;
@@ -436,9 +555,24 @@
 }
 
 .nb {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 3px;
+    margin-top: 0;
+    color: whitesmoke;
+    font-family: "Libertinus Math", system-ui;
+}
+
+.must {
+    font-size: 25px;
     font-weight: 400;
     margin: 5px;
+    color: #1d1717;
+    padding: 0 20px;
+    color: whitesmoke;
+    font-family: "Libertinus Serif", serif;
+    line-height: 25px;
+    padding: 10px 25px;
 }
 
 @media (max-width: 480px ) {
@@ -447,12 +581,17 @@
         flex-direction: column;
     }
 
+    .cartimage {
+        width: 160px;
+        height: 160px;
+    }
+
     .info {
-        width: 360px;
+        width: 95%;
     }
 
     .very {
-        width: 320px;
+        width: 90%;
         font-size: 18px;
     }
 
@@ -461,6 +600,39 @@
     }
 
     .must {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 5px 25px;
+    }
+
+    .cartlist {
+        width: 95%;
+    }
+
+    .cartRow {
+        width: 180px;
+    }
+
+    .productname {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 0 20px;
+    }
+
+    .productsize {
         font-size: 14px;
+        line-height: 20px;
+        padding: 0 10px;
+    }
+
+    .productcolor {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10px;
+    }
+
+    .quantityBox {
+        font-size: 14px;
+        font-weight: 300;
     }
 }

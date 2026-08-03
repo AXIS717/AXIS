@@ -1,56 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.news {
-    width: 100%;
-    height: 50px;
-    overflow: hidden;
-    background: #d61900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ticker {
-    white-space: nowrap;
-}
-
-.ticker span {
-    font-size: 30px;
-    font-weight: 400;
-    color: #fff;
-    display: inline-block;
-    padding-left: 100%;
-    animation: scroll-left 50s linear infinite;
-}
-
-@keyframes scroll-left{
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
 .line {
-    margin: 5px;
+    font-family: "Cinzel", serif;
+    padding: 10px 0;
     font-size: 40px;
-    font-weight: 400;
-    color: #000;
-}
-
-.mpr {
-    margin: 2px;
-    font-size: 30px;
     font-weight: bold;
     color: #000;
 }
 
+.mpr {
+    font-family: "Cormorant Garamond", serif;
+    margin: 2px;
+    padding: 5px auto;
+    font-size: 35px;
+    font-weight: 500;
+    color: #000;
+}
+
 .merch {
-    background: linear-gradient(230deg, #d5d4d4, #919090, #a9aaa9, #515150, #3c3c3a);
+    width: 860px;
+    background: linear-gradient(45deg, #789292, #4e7e7d, #5d6b6b);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -61,18 +28,37 @@
     margin-right: 20px;
 }
 
-.itembox {
+.item-category {
+    width: 400px;
+    height: 60px;
+    border: 1px solid #000;
     display: flex;
-    flex-wrap: wrap;  
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background: linear-gradient(45deg, #708f96, #aa895f);
+}
+
+.category {
+    font-family: "Cinzel", serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px;
+    color: #1a1a1a;
+}
+
+.itembox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     gap: 10px;
 }
 
-.item {
+.item-card {
     width: 180px;
     height: auto;
     margin: 10px;
-    background: linear-gradient(210deg, #d3e4e7, #82acab, #2a777c, #0b4b54, #032a33);
+    background: linear-gradient(230deg, #364649, #708f96);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -80,25 +66,51 @@
     align-items: center;
 }
 
-.itemname {
+.item-card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.815);
+}
+
+.productname {
+    font-family: "Marcellus", serif;
     margin: 5px;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     color: whitesmoke;
 }
 
-.price {
-    margin: 0;
+.productprice {
+    font-family: "Cinzel", serif;
+    margin: 5px;
     font-size: 18px;
     font-weight: bold;
+    color: #0e1116;
 }
 
-.image img {
+
+.image img{
+    background-color: #27958f;
     border-radius: 15px;
     width: 160px;
     height: 160px;
     margin: 10px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    background-color: #27958f;
+    border-radius: 15px;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -129,33 +141,41 @@
 
 @media (max-width: 460px) {
 
+    .merch {
+        width: 420px;
+        margin: 10px;
+    }
+
     .line {
-        font-size: 30px;
-        font-weight: 600;
+        font-size: 35px;
+        font-weight: bold;
+        padding: 5px 0;
     }
 
     .mpr {
-        font-size: 12px;
+        font-size: 25px;
         font-weight: 300;
+        padding: 0 20px;
+        line-height: 25px;
+        margin-bottom: 8px;
     }
 
-    .item {
-        width: 40%;
+    .itembox {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    .item-card {
+        width: 180px;
+        height: auto;
     }
 
     .image img {
-        width: 125px;
-        height: 125px;
+        width: 155px;
+        height: 155px;
     }
 
-    .itemname {
-        font-size: 14px;
-
-    }
-
-    .price {
-        font-size: 14px;
+    .productname {
+        font-size: 20px;
     }
 
     .select {
