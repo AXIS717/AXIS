@@ -39,6 +39,15 @@
         <priority>0.8</priority>
     </url>
 
+    <!--ABout AXIS-->
+
+    <url>
+        <loc>https://axis-official.co.za/About-AXIS/about-axis.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
     <!-- Studios -->
 
     <url>
@@ -74,7 +83,7 @@
     </url>
 
     <url>
-        <loc>https://axis-official.co.za/Item-CSS-Js/book-bag.html</loc>
+        <loc>https://axis-official.co.za/Item-CSS-JS/book-bag.html</loc>
         <lastmod>2026-08-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -101,32 +110,37 @@
         <priority>0.7</priority>
     </url>
 
-    <!-- 3D Prints -->
-
     <url>
-        <loc>https://axis-official.co.za/lavad.html</loc>
-        <lastmod>2026-08-02</lastmod>
+        <loc>https://axis-official.co.za/Item-CSS-JS/bopp.html</loc>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://axis-official.co.za/iced.html</loc>
-        <lastmod>2026-08-02</lastmod>
+        <loc>https://axis-official.co.za/Item-CSS-JS/ice-cream.html</loc>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://axis-official.co.za/crystald.html</loc>
-        <lastmod>2026-08-02</lastmod>
+        <loc>https://axis-official.co.za/Item-CSS-JS/loomie.html</loc>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://axis-official.co.za/nightf.html</loc>
-        <lastmod>2026-08-02</lastmod>
+        <loc>https://axis-official.co.za/Item-CSS-JS/octopus.html</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://axis-official.co.za/Item-CSS-JS/oryx.html</loc>
+        <lastmod>2026-09-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -139,5 +153,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+
 
 </urlset>
