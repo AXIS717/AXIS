@@ -138,13 +138,15 @@ background: linear-gradient(45deg, #d2d8d8, #bfc6d0, #a5afd4);
 background: linear-gradient(230deg, #364649, #708f96);
 background: linear-gradient(45deg, #798c8a, #e0d9e0, #d2d3d8, #6a687e)
 */
+
+/*
 .items {
     margin: 20px auto;
     height: auto;
     display: flex;
     flex-direction: column;
 }
-
+*/
 .list {
     padding: 0;
     margin: 0;
@@ -187,6 +189,7 @@ background: linear-gradient(45deg, #798c8a, #e0d9e0, #d2d3d8, #6a687e)
     align-items: center;
     margin: 10px;
 }
+
 
 .productname {
     height: 50px;
@@ -337,7 +340,7 @@ background: linear-gradient(45deg, #798c8a, #e0d9e0, #d2d3d8, #6a687e)
     border: 2px solid #000;
     margin: 10px;
     margin-right: 5px;
-    font-size: 30px;
+    font-size: 28px;
     color: whitesmoke;
     font-weight: bold;
     display: flex;
@@ -564,76 +567,94 @@ input[type="radio"] {
     .important {
         width: 440px;
     }
-/*
+
     .list { 
-        padding: 0;
-        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        padding: 15px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-*/
+
     .cartRow {
-        width: 460px;
+        display: flex;
+        flex-direction: column;
+        width: 190px;
         height: 100%;
-        border-radius: 0;
+        border-radius: 20px 20px 0 0;
+        margin: 10px;
     }
 
     .cartimage {
-        width: 86px;
-        height: 86px;
-        border-radius: 0;
+        width: 170px;
+        height: 170px;
+        border-radius: 15px 15px 0 0;
+        border: 4px solid #0e1116;
     }
 
     .cartimage img {
         width: 100%;
         height: 100%;
-        border-radius: 0 10px 10px 0;
+        border-radius: 15px 15px 0 0;
+        border: none;
+        margin: 0;
     }
 
     .productname {
-        width: 72px;
-        font-size: 14px;
+        width: 170px;
+        height: auto;
+        font-size: 20px;
         line-height: 18px;
+        border: none;
+        margin: 5px 0;
     }
 
     .productsize {
-        width: 72px;
-        font-size: 14px;
+        width: 170px;
+        height: auto;
+        font-size: 18px;
         line-height: 18px;
+        border: none;
+        margin: 5px 0;
     }
 
     .productcolor {
-        width: 72px;
-        font-size: 12px;
+        width: 170px;
+        height: auto;
+        font-size: 18px;
         line-height: 16px;
+        border: none;
+        margin: 5px 0;
     }
 
     .productprice {
-        width: 72px;
+        width: 170px;
+        border: none;
 
     }
 
     .quantityBox {
-        width: 82px;
-        font-size: 14px;
-        gap: 5px;
-
+        width: 170px;
+        font-size: 18px;
+        justify-content: space-evenly;
+        border: none;
     }
 
     .quantityBox button {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .quantityBox button:hover {
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
     }
 
     .quantityBox span {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .price-details {

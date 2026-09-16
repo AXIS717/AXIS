@@ -485,12 +485,53 @@ a{
 
 }
 
+.axis-story {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
 .footer-logo p{
 
     color:#BDC3C7;
 
     line-height:1.8;
 
+}
+
+.find {
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.story-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-story {
+    font-size: 24px;
+    color: whitesmoke;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgba(255, 255, 255, .4);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.315);
+    box-shadow: inset 1px 2px 5px -1px rgba(255, 255, 255, .4);
+}
+
+.to-story:hover {
+    cursor: pointer;
+    width: 115px;
+    height: 35px;
+    box-shadow: 4px 6px 10px -2px rgba(255, 255, 255, .78), inset 1px 2px 5px -1px rgba(255, 255, 255, .4);
 }
 
 .footer-column {
@@ -687,5 +728,9 @@ a{
 
     .socials {
         gap: 5px;
+    }
+
+    .story-box {
+        flex-direction: column;
     }
 }
