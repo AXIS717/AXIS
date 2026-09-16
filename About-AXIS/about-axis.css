@@ -1,0 +1,268 @@
+.behind-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.b-a-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.b-a-axis-stamp{
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    border-radius: 100%;
+    border: 2px solid #000 ;
+}
+
+.axis-stamp {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.b-a-sub-title {
+    width: 200px;
+    border: 1px solid #000;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.b-a-sub-title p {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 8px;
+}
+
+.axis-story-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.axis-story-box-one {
+    width: 520px;
+    margin-top: 10px;
+}
+
+.axis-story-box-two {
+    width: 320px;
+    margin-top: 10px;
+}
+
+.axis-intro {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.axis-intro p {
+    line-height: 20px;
+}
+
+.axis-intro h2,
+.breaking-news h2,
+.the-start h2,
+.the-owner h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.axis-news-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breaking-news {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.breaking-news p,
+.the-start p {
+    line-height: 20px;
+    padding: 8px 0;
+}
+
+.the-start {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.the-owner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 15px;
+}
+
+.the-owner p {
+    line-height: 20px;
+}
+
+.style-box-for-owner {
+    display: flex;
+    flex-direction: row;
+}
+
+.die-box {
+    padding: 5px 10px;
+}
+
+.the-owner-photo {
+    width: 200px;
+    height: 300px;
+    padding: 10px 0;
+    border-radius: 30px;
+}
+
+.mission {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.axis-services-box {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.milestones {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission p,
+.axis-services-box p,
+.milestones p {
+    line-height: 20px;
+}
+
+.mission h2,
+.axis-services-box h2,
+.milestones h2,
+.bottom-story-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.bottom-story-box {
+    padding: 5px 15px;
+
+}
+
+.bottom-story-box p {
+    line-height: 20px;
+}
+
+.tha-end {
+    line-height: 20px;
+    padding: 5px 15px;
+}
+
+.the-end-heading {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.the-end-sub {
+    font-size: 30px;
+}
+
+.created-by {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-top: 10px;
+}
+
+.created-by h2 {
+    font-size: 30px;
+    margin: 10px 5px;
+}
+
+@media (max-width: 600px) {
+    .axis-story-box {
+        flex-direction: column;
+    }
+
+    .axis-news-row {
+        flex-direction: column;
+    }
+
+    .axis-story-box-two {
+        width: 520px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .b-a-axis-stamp {
+        width: 80px;
+        height: 80px;
+    }
+
+    .b-a-title {
+        font-size: 12px;
+    }
+
+    .b-a-sub-title h2{
+        font-size: 12px;
+    }
+
+    .b-a-sub-title p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .axis-story-box-one {
+        width: 440px;
+
+    }
+
+    .axis-story-box-two {
+        width: 440px;
+    }
+
+    .style-box-for-owner {
+        flex-direction: column;
+    }
+}
